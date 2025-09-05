@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/code.js" defer></script>
+    <title>Tienda virtual</title>
+</head>
+<body>
+    <header class="header">
+        <i><img src="img/menu.svg" alt="Icono Menu" class="header__icon header__icon--img"></i>
+        <nav class="header__menuNavegacion">
+            <img src="img/close.png" class="header__menuNavegacion--close" />
+            <a href="#Inicio">Inicio</a>
+            <a href="#products">Articulos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <img src="img/logo.png" alt="Logo Adidas" class="header__logo">
+        <i><img src="img/cart.png" alt="Icono Carrito" class="header__icon header__icon--img"><span id="counter" class="counter">0</span></i>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h2 class="banner__title">Productos nuevos</h2>
+            <p class="banner__subtitle">Conoce nuestros productos nuevos</p>
+        </section>
+
+        <section class="products" id="products">
+            <article class="products__card">
+                <img src="img/jersey.png" alt="Jersey"  class="products__card--img">
+                <p class="products__card--titles">Jersey</p>
+                <p class="products__card--titles">$1,000.00</p>
+                <button class="products__card--button" data-name="Jersey" data-price="1000">Aregar al carriro</button>
+            </article>
+            <article class="products__card">
+                <img src="img/pantalones.PNG" alt="Chamarra"  class="products__card--img">
+                <p class="products__card--titles">Pantalón</p>
+                <p class="products__card--titles">$1,500.00</p>
+                <button class="products__card--button" data-name="Pantalones" data-price="1500">Aregar al carriro</button>
+            </article>
+            <article class="products__card">
+                <img src="img/gorra.png" alt="Gorra"  class="products__card--img">
+                <p class="products__card--titles">Gorra</p>
+                <p class="products__card--titles">$500.00</p>
+                <button class="products__card--button" data-name="Gorra" data-price="500">Aregar al carriro</button>
+            </article>
+            <article class="products__card">
+                <img src="img/sudadera.jpg" alt="Sudadera"  class="products__card--img">
+                <p class="products__card--titles">Sudadera</p>
+                <p class="products__card--titles">$1,000.00</p>
+                <button class="products__card--button" data-name="Sudadera" data-price="1000">Aregar al carriro</button>
+            </article>
+            <article class="products__card">
+                <img src="img/tenis.jpg" alt="Shoes"  class="products__card--img">
+                <p class="products__card--titles">Tenis</h3>
+                <p class="products__card--titles">$1,500.00</p>
+                <button class="products__card--button" data-name="Tenis" data-price="1500">Aregar al carriro</button>
+            </article>
+            <article class="products__card">
+                <img src="img/balon.PNG" alt="balon" class="products__card--img">
+                <p class="products__card--titles">Balón</h3>
+                <p class="products__card--titles">$500.00</p>
+                <button class="products__card--button" data-name="Balon" data-price="500">Aregar al carriro</button>
+            </article>
+            <article class="products__card">
+                <img src="img/balonbasket.PNG" alt="balon basket" class="products__card--img">
+                <p class="products__card--titles">Balón Basket</p>
+                <p class="products__card--titles">$700.00</p>
+                <button class="products__card--button" data-name="Balon Basket" data-price="1000">Aregar al carriro</button>
+            </article>  
+            <article class="products__card">
+                <img src="img/balonFA.PNG" alt="balon Americano" class="products__card--img">
+                <p class="products__card--titles">Balón Fútbol Americano</p>
+                <p class="products__card--titles">$900.00</p>
+                <button class="products__card--button" data-name="Balon Americano" data-price="1000">Aregar al carriro</button>
+            </article>  
+            <article class="products__card">
+                <img src="img/shorts.png" alt="shorts" class="products__card--img">
+                <p class="products__card--titles">Shorts</p>
+                <p class="products__card--titles">$800.00</p>
+                <button class="products__card--button" data-name="Shorts" data-price="1000">Aregar al carriro</button>
+            </article>
+            <article class="products__card">
+                <img src="img/chamarra.png" alt="chamarra" class="products__card--img">
+                <p class="products__card--titles">Chamarra</p>
+                <p class="products__card--titles">$1,000.00</p>
+                <button class="products__card--button" data-name="Chamarra" data-price="1000">Aregar al carriro</button>
+            </article>
+            <article class="products__card">
+                <img src="img/mochila.PNG" alt="mochila" class="products__card--img">
+                <p class="products__card--titles">Mochila</p>
+                <p class="products__card--titles">$1,200.00</p>
+                <button class="products__card--button" data-name="Mochila" data-price="1000">Aregar al carriro</button>
+            </article>
+        </section>
+
+        <section class="cart" id="cart">
+            <h2>REVISA TU CARRITO</h2>
+            <ul id="list-cart"></ul>
+            <p>Total: $<span id="total">0</span></p>
+            <button id="emptyCart" hidden>Vaciar Carrito</button>
+        </section>
+    </main>
+    <footer>
+        <article id="contacto">
+            <h3>Contáctanos</h3>
+            <p>123-456-7890</p>
+        </article>
+    </footer>
+</body>
+</html> 
